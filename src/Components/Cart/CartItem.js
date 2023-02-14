@@ -10,7 +10,7 @@ const CartItem = ({cartItem}) => {
     return(
         <div>
             <p>{books.name}</p>
-            <p>{cartItem.quantity} штук (а, и)</p>
+            <p>{cartItem.quantity} шт</p>
             <p>Цена: $ {books.price * cartItem.quantity}</p>
             <span onClick={() => dispatch(
                 removeItemFromCart({cartItemId: cartItem.id}))}>
