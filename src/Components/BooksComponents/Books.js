@@ -13,7 +13,7 @@ const Books = () => {
                 return true;
                 return selectedCategory === book.category;
             })
-            .map((book, id) => <Book key={id} book = {book}/>)}
+            .map((book, index) => <Book key={index} book = {book}/>)}
            </div>
         )
 }

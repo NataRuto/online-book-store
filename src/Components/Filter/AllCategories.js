@@ -5,7 +5,7 @@ const AllCategories = () => {
         <div>
             <h1>Какие книги вам нравятся??</h1>
             {["ИРОНИЧЕСКИЙ ДЕТЕКТИВ", "ЛЮБОВНЫЙ РОМАН", "ФАНТАСТИКА", "ИСТОРИЧЕСКИЙ РОМАН", "ВСЕ"]
-            .map((category, id) => <Filter key={id} category = {category}/>
+            .map((category, index) => <Filter key={index} category = {category}/>
             )}
            
         </div>
